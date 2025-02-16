@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensis - Nesus elite</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #search-form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+    }
+
+    #search-form label {
+      margin-bottom: 5px;
+      color: #00ff00;
+    }
+
+    #search-form input[type="text"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #252525;
+      color: #fff;
+    }
+
+    #search-form button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00ff00;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    #search-form button:hover {
+      background-color: #00c800;
+    }
+
+    #results {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    #results h3 {
+      color: #00ff00;
+      margin-bottom: 10px;
+    }
+
+    #results ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #results ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #252525;
+    }
+
+    #results ul li:last-child {
+      border-bottom: none;
+    }
+
+    #best-sensitivities {
+      margin-top: 30px;
+    }
+
+    #best-sensitivities h2 {
+      color: #00FF00;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sensi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .sensi-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .sensi-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .sensi-card h3 {
+      color: #00FF00;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .sensi-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sensi-card ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #252525;
+    }
+
+    .sensi-card ul li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <!-- Substitua com o logo do seu time -->
+        <svg width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" stroke="white" stroke-width="5"/>
+          <path d="M30 30 L70 70 M70 30 L30 70" stroke="white" stroke-width="5"/>
+        </svg>
+        <span>Nesus elite</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="novidades.html">Novidades</a></li>
+        <li><a href="treinos.html">Treinos</a></li>
+        <li><a href="contato.html">Sensis</a></li>
+        <li><a href="fundadores.html">Fundadores</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sensibilidades">
+    <h2>Sensis</h2>
+    <p>Encontre as melhores sensibilidades para o seu dispositivo.</p>
+
+    <form id="search-form">
+      <label for="device">Marca e Modelo do Celular:</label>
+      <input type="text" id="device" name="device" placeholder="Ex: Samsung A51">
+      <button type="submit">Pesquisar Sensibilidade</button>
+    </form>
+
+    <div id="results">
+      <!-- Resultados da pesquisa -->
+    </div>
+  </section>
+
+  <!-- Best Sensitivities Section -->
+  <section id="best-sensitivities">
+    <h2>As Melhores Sensis</h2>
+    <div class="sensi-grid">
+      <!-- Sensi Card 1 -->
+      <div class="sensi-card">
+        <h3>Sensi Geral</h3>
+        <ul>
+          <li>Geral: 100</li>
+          <li>Red Dot: 90</li>
+          <li>Mira 2x: 85</li>
+          <li>Mira 4x: 80</li>
+          <li>AWP: 70</li>
+          <li>Olhadinha: 80</li>
+        </ul>
+      </div>
+
+      <!-- Sensi Card 2 -->
+      <div class="sensi-card">
+        <h3>Sensi Competitiva</h3>
+        <ul>
+          <li>Geral: 100</li>
+          <li>Red Dot: 90</li>
+          <li>Mira 2x: 80</li>
+          <li>Mira 4x: 80</li>
+          <li>AWP: 65</li>
+          <li>Olhadinha: 75</li>
+        </ul>
+      </div>
+
+      <!-- Sensi Card 3 -->
+      <div class="sensi-card">
+        <h3>Sensi মোবাইল (High DPI)</h3>
+        <ul>
+          <li>Geral: 95</li>
+          <li>Red Dot: 85</li>
+          <li>Mira 2x: 75</li>
+          <li>Mira 4x: 70</li>
+          <li>AWP: 60</li>
+          <li>Olhadinha: 70</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Nesus elite. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const device = document.getElementById('device').value.trim();
+      const resultsDiv = document.getElementById('results');
+
+      if (device) {
+        // Simulação de pesquisa e geração de sensibilidade
+        const sensibilidadeGerada = gerarSensibilidade(device);
+        resultsDiv.innerHTML = `<h3>Sensibilidade Não encontrada: Gerando pelas Informaçoes passadas: ${device}</h3><ul>
+          <li>Geral: ${sensibilidadeGerada.geral}</li>
+          <li>Red Dot: ${sensibilidadeGerada.redDot}</li>
+          <li>Mira 2x: ${sensibilidadeGerada.mira2x}</li>
+          <li>Mira 4x: ${sensibilidadeGerada.mira4x}</li>
+          <li>AWP: ${sensibilidadeGerada.awp}</li>
+          <li>Olhadinha: ${sensibilidadeGerada.olhadinha}</li>
+        </ul>`;
+      } else {
+        alert('Por favor, insira a marca e modelo do celular.');
+      }
+    });
+
+    function gerarSensibilidade(device) {
+      // Lógica para gerar sensibilidade com base no dispositivo
+      // Aqui você pode adicionar algoritmos mais complexos
+      return {
+        geral: Math.floor(Math.random() * 40) + 60, // Random entre 60-100
+        redDot: Math.floor(Math.random() * 40) + 60,
+        mira2x: Math.floor(Math.random() * 40) + 60,
+        mira4x: Math.floor(Math.random() * 40) + 60,
+        awp: Math.floor(Math.random() * 40) + 60,
+        olhadinha: Math.floor(Math.random() * 40) + 60
+      };
+    }
+  </script>
+
+</body>
+</html>

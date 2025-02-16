@@ -1,0 +1,231 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+header {
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #00ff00;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ff00;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1588591458988-057157283019?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #00ff00;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00c800;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00ff00;
+}
+
+#contato form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contato form input,
+#contato form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#contato form textarea {
+  resize: vertical;
+}
+
+#contato form button {
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#contato form button:hover {
+  background-color: #00c800;
+}
+
+#sensibilidades {
+  padding: 50px 20px;
+}
+
+#sensibilidades h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00ff00;
+}
+
+.sensibilidade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sensibilidade-item {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.sensibilidade-item:hover {
+  transform: translateY(-5px);
+}
+
+.sensibilidade-item h3 {
+  color: #00ff00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sensibilidade-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sensibilidade-item ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #252525;
+}
+
+.sensibilidade-item ul li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  background-color: #1e1e1e;
+  padding: 20px 0;
+  text-align: center;
+  color: #999;
+  font-size: 0.9em;
+}
+
+/* Estilos para tornar responsivo */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  #hero {
+    height: 400px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+}
